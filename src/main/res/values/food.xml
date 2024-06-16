@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+     Copyright (C) 2020 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <string-array name="korean_foods">
+        <item>부대찌개</item>
+        <item>비빔밥</item>
+        <item>불고기</item>
+        <item>된장찌개</item>
+        <item>삼겹살</item>
+    </string-array>
+    <string-array name="chinese_foods">
+        <item>짜장면</item>
+        <item>짬뽕</item>
+        <item>탕수육</item>
+        <item>마파두부</item>
+    </string-array>
+    <string-array name="japanese_foods">
+        <item>초밥</item>
+        <item>라멘</item>
+        <item>덴푸라</item>
+        <item>우동</item>
+        <item>타코야키</item>
+    </string-array>
+    <string-array name="western_foods">
+        <item>스테이크</item>
+        <item>파스타</item>
+        <item>피자</item>
+        <item>버거</item>
+        <item>샐러드</item>
+    </string-array>
+</resources>

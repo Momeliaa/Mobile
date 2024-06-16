@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.wordsapp.MainFragment"
+        android:label="Main Fragment"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_randomRecommendFragment"
+            app:destination="@id/randomRecommendFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_foodCategoriesFragment"
+            app:destination="@id/foodCategoriesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/randomRecommendFragment"
+        android:name="com.example.wordsapp.RandomRecommendFragment"
+        android:label="Random Recommend Fragment"
+        tools:layout="@layout/fragment_random_recommend" >
+        <action
+            android:id="@+id/action_randomRecommendFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/foodCategoriesFragment"
+        android:name="com.example.wordsapp.FoodCategoriesFragment"
+        android:label="Food Categories Fragment"
+        tools:layout="@layout/fragment_food_categories">
+        <action
+            android:id="@+id/action_foodCategoriesFragment_to_foodListFragment"
+            app:destination="@id/foodListFragment">
+            <argument
+                android:name="category"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/action_foodCategoriesFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/foodListFragment"
+        android:name="com.example.wordsapp.FoodListFragment"
+        android:label="Food List Fragment"
+        tools:layout="@layout/fragment_food_list" >
+        <action
+            android:id="@+id/action_foodListFragment_to_foodCategoriesFragment"
+            app:destination="@id/foodCategoriesFragment" />
+    </fragment>
+</navigation>
